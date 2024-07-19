@@ -1,0 +1,11 @@
+Estudiantes que asitiran al evento:
+- Juan
+- Carmen
+- Jasmin
+
+Lista de Charlistas:
+- Hector
+- Fred Pena
+- Carlos Camacho
+- Eudris
+- Elias

@@ -1,0 +1,26 @@
+---
+- name: Configurando el cluster
+  hosts: all
+  tasks:
+    - name: Instalando htop
+      apt:
+        update_cache: yes
+        pkg: 
+        - htop
+        
+    - name: Renderizar plantilla
+      template:
+       src: plantilla.txt.j2
+       dest: /root/plantilla.txt
+
+    - name: Copiar archivo
+      copy: 
+        src: archivo.txt
+        dest: /root/archivo.txt
+      notify: Archivo cambio
+        
+  handlers:
+    - name: Archivo cambio
+      debug: 
+        msg: "Files changes"
+

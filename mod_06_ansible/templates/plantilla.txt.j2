@@ -1,0 +1,12 @@
+Estudiantes que asitiran al evento:
+{% for estudiante in estudiantes %}
+- {{ estudiante }}
+{% endfor %}
+
+{% if incluir_charlistas == true %}
+Lista de Charlistas:
+- Hector
+- Fred Pena
+- Carlos Camacho
+- Eudris
+{% endif %}

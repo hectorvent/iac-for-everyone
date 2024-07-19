@@ -1,0 +1,8 @@
+sshkeys
+.terraform*
+terraform.**
+target
+pulumi-iac
+.env
+.DS_Store
+.vscode

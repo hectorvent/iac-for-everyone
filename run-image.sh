@@ -1,0 +1,1 @@
+docker run --rm -it -v ${PWD}:/iac -w /iac hectorvent/iac-for-everyone:test bash
